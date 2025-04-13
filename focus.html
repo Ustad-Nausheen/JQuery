@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        span{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <input type="text">
+    <!-- <span style="color: red;">Enter your name</span> -->
+    <span>Enter your name</span>
+
+
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                //$(this).next("span").css("display","inline").fadeOut(2000);
+                $(this).next("span").css({"display":"inline","color":"red"}).fadeOut(2000); //JSION formate-->in java collection part and in python dictoinary
+
+            });
+        });
+    </script>
+</body>
+</html>

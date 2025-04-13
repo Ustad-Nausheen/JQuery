@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <h2>Good afternoon</h2> //normal h2 tag
+
+    <h2 id="xyz">Good afternoon</h2> //with id
+
+    <h2 class="abc">Good afternoon</h2> //with class
+    <script>
+        $(document).ready(function(){
+            $("#xyz").css("color","red");
+            $(".abc").css("color","green");
+        });
+    </script>
+</body>
+</html>

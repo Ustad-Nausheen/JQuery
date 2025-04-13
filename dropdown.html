@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<body>
+
+    <select id="mydropdown">
+        <option>Abc</option>
+        <option>Xyz</option>
+        <option>Pqr</option>
+        <option>Lmn</option>
+
+    </select>
+
+
+    <script>
+        $(document).ready(function(){
+
+            function myfun()
+            {
+                var v = $("#mydropdown").val();
+                alert(v);
+            }
+            $("select").change(myfun); //change
+            myfun();
+            
+        });
+    </script>
+</body>
+</html>

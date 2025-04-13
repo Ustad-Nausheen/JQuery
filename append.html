@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    
+    <button>Click Here</button>
+    <ol>
+        <li>apple</li>
+        <li>orange</li>
+        <li>banana</li>
+    </ol>
+
+    <script>
+        $(document).ready(function(){
+           $("button").click(function(){
+            $("ol").append("<li>New Item Mango</li>")
+           });
+        });
+    </script>
+</body>
+</html>

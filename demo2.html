@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character and Word Counter</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>Character and Word Counter</h2>
+
+    <textarea id="inputText" rows="4" cols="50" placeholder="Type here..."></textarea><br><br>
+    
+    <p>Characters: <span id="charCount">0</span></p>
+    <p>Words: <span id="wordCount">0</span></p>
+
+    <script>
+        $('#inputText').on('input', function() {
+            var text = $(this).val();
+            $('#charCount').text(text.length);
+            $('#wordCount').text(text.trim().split(/\s+/).filter(Boolean).length);
+        });
+    </script>
+
+</body>
+</html>
